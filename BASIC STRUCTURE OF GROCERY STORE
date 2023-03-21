@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class GroceryStoreManagementSystem {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // create the menu and display it to the user
+        while (true) {
+            System.out.println("Welcome to the Grocery Store Management System");
+            System.out.println("--------------------------------------------");
+            System.out.println("1. Inventory Management");
+            System.out.println("2. Sales Tracking");
+            System.out.println("3. Customer Management");
+            System.out.println("4. Reporting");
+            System.out.println("5. Exit");
+            System.out.println("Enter your choice: ");
+            int choice = scanner.nextInt();
+            
+            // based on the user's choice, execute the appropriate function
+            switch (choice) {
+                case 1:
+                    inventoryManagement();
+                    break;
+                case 2:
+                    salesTracking();
+                    break;
+                case 3:
+                    customerManagement();
+                    break;
+                case 4:
+                    reporting();
+                    break;
+                case 5:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
+    }
+    
+    // implement the inventoryManagement() function to manage the inventory
+    private static void inventoryManagement() {
+        // code for inventory management goes here
+    }
+    
+    // implement the salesTracking() function to track the sales
+    private static void salesTracking() {
+        // code for sales tracking goes here
+    }
+    
+    // implement the customerManagement() function to manage the customers
+    private static void customerManagement() {
+        // code for customer management goes here
+    }
+    
+    // implement the reporting() function to generate reports
+    private static void reporting() {
+        // code for reporting goes here
+    }
+}
